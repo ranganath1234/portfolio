@@ -1,309 +1,575 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Ranganath Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-   </head>
-   <body>
-      <!-- Scroll Button start -->
-      <div class="scroll-up-btn">
-         <i class="fas fa-angle-double-up"></i>
-      </div>
-      <!-- Scroll Button end -->
-      <!-- Navbar Start-->
-      <nav class="navbar">
-         <div class="max-width">
-            <div class="logo">
-               <a href="#">Portfo<span>lio.</span>
-               </a>
-            </div>
-            <ul class="menu">
-               <li>
-                  <a href="#home" class="menu-btn">Home</a>
-               </li>
-               <li>
-                  <a href="#about" class="menu-btn">About</a>
-               </li>
-               <li>
-                  <a href="#skills" class="menu-btn">Skills</a>
-               </li>
-               <li>
-                  <a href="#projects" class="menu-btn">Projects</a>
-               </li>
-               <li>
-                  <a href="#contact" class="menu-btn">Contact</a>
-               </li>
-            </ul>
-            <div class="menu-btn">
-               <i class="fas fa-bars"></i>
-            </div>
-         </div>
-      </nav>
-      <!-- Navbar End -->
-      <!-- Home Section Start -->
-      <section class="home" id="home">
-         <div class="max-width">
-            <div class="home-content">
-               <div class="text-1">Hello 👋 I'm</div>
-               <div class="text-2">Ranganath</div>
-               <div class="text-3">And I'm a <span class="typing"></span>
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ranganath M — Python Full-Stack Developer</title>
+  <meta name="description" content="Ranganath M is a Python full-stack developer and co-founder of CampusProjects.tech. Django REST APIs, Razorpay payments, React frontends, Docker on AWS — plus IoT hardware and a published book chapter.">
+  <meta name="author" content="Ranganath M">
+  <meta name="theme-color" content="#0a0e13">
 
-               </div>
+  <link rel="canonical" href="https://ranganath1234.github.io/portfolio/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ranganath1234.github.io/portfolio/">
+  <meta property="og:title" content="Ranganath M — Python Full-Stack Developer">
+  <meta property="og:description" content="Co-founder of CampusProjects.tech. Django REST, Razorpay, React, Docker on AWS, ESP8266 IoT, and a published Taylor &amp; Francis book chapter.">
+  <meta property="og:image" content="https://ranganath1234.github.io/portfolio/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ranganath M — Python Full-Stack Developer portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ranganath1234.github.io/portfolio/assets/og-image.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Kannada:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Runs before first paint: sets the theme and flags that JS is available (avoids a flash). -->
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      d.setAttribute('data-theme', t);
+      d.classList.add('js');
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured data (helps Google understand who this page is about) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ranganath M",
+    "jobTitle": "Python Full-Stack Developer",
+    "email": "mailto:ranganathmukkundi@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Gangavathi", "addressRegion": "Karnataka", "addressCountry": "IN" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Vidyavardhaka College of Engineering, Mysore" },
+    "worksFor": { "@type": "Organization", "name": "CampusProjects.tech", "url": "https://www.campusprojects.tech" },
+    "sameAs": [ "https://www.linkedin.com/in/ranganath-m", "https://www.campusprojects.tech" ],
+    "knowsAbout": ["Python", "Django REST Framework", "React", "TypeScript", "Docker", "AWS", "Razorpay", "SEO", "Embedded Systems", "IoT"]
+  }
+  </script>
+
+  <!-- Google Analytics 4: uncomment and replace G-XXXXXXXXXX with your measurement ID.
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+      <symbol id="i-volume" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></symbol>
+      <symbol id="i-pulse" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="#top" aria-label="Ranganath M — home">
+        <span class="logo__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="logo__text">Ranganath <b>M</b></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#publication">Publication</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
+          <svg class="icon icon--sun"><use href="#i-sun"/></svg>
+          <svg class="icon icon--moon"><use href="#i-moon"/></svg>
+        </button>
+        <a class="btn btn--small btn--primary nav__resume" href="assets/Ranganath_M_Resume.pdf" download>
+          <svg class="icon"><use href="#i-download"/></svg> Resume
+        </a>
+        <button class="icon-btn nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <svg class="icon icon--open"><use href="#i-menu"/></svg>
+          <svg class="icon icon--close"><use href="#i-x"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <svg class="hero__traces" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g class="trace-base">
+          <path d="M0 120 H220 L260 160 H520"/>
+          <path d="M0 300 H140 L180 340 H400 L440 380 H700"/>
+          <path d="M1200 200 H980 L940 240 H760"/>
+          <path d="M1200 520 H900 L860 560 H640"/>
+          <path d="M0 640 H300 L340 600 H560"/>
+          <path d="M1200 700 H1000 L960 660 H820"/>
+          <path d="M0 470 H90 L130 510 H330"/>
+          <path d="M1200 360 H1090 L1050 400 H900"/>
+          <circle cx="520" cy="160" r="5"/><circle cx="700" cy="380" r="5"/><circle cx="760" cy="240" r="5"/>
+          <circle cx="640" cy="560" r="5"/><circle cx="560" cy="600" r="5"/><circle cx="820" cy="660" r="5"/>
+          <circle cx="330" cy="510" r="5"/><circle cx="900" cy="400" r="5"/>
+        </g>
+        <g class="trace-flow">
+          <path pathLength="100" d="M0 120 H220 L260 160 H520"/>
+          <path pathLength="100" class="d2" d="M1200 200 H980 L940 240 H760"/>
+          <path pathLength="100" class="d3" d="M0 640 H300 L340 600 H560"/>
+          <path pathLength="100" class="d4" d="M1200 520 H900 L860 560 H640"/>
+        </g>
+      </svg>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill reveal"><svg class="icon"><use href="#i-pin"/></svg> Gangavathi, Karnataka · India</p>
+
+          <h1 class="hero__title reveal">
+            <span class="hero__hello">Hello, world — I’m</span>
+            <span class="hero__name">Ranganath&nbsp;M</span>
+          </h1>
+
+          <p class="hero__role reveal" aria-live="off">
+            I build <span class="typed" id="typed" data-words='["Django REST APIs","Razorpay payment flows","React + TypeScript frontends","Dockerized deployments on AWS","wearable IoT devices"]'>Django REST APIs</span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero__lead reveal">
+            Python full-stack developer and co-founder of <a href="https://www.campusprojects.tech" target="_blank" rel="noopener">CampusProjects.tech</a>.
+            I take products from API to payment to production — and I’ve co-authored a published book chapter on a
+            wearable that helps visually impaired pedestrians cross the road safely.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#projects">See my work <svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+
+          <ul class="hero__links reveal" aria-label="Quick links">
+            <li><a href="https://www.linkedin.com/in/ranganath-m" target="_blank" rel="noopener"><svg class="icon"><use href="#i-linkedin"/></svg> LinkedIn</a></li>
+            <li><a href="mailto:ranganathmukkundi@gmail.com"><svg class="icon"><use href="#i-mail"/></svg> Email</a></li>
+            <li><a href="https://www.campusprojects.tech" target="_blank" rel="noopener"><svg class="icon"><use href="#i-globe"/></svg> campusprojects.tech</a></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="float float--book"><svg class="icon"><use href="#i-book"/></svg><span>Published · Taylor &amp; Francis, 2026</span></div>
+
+          <div class="code" role="img" aria-label="A Python class describing Ranganath: role, startup, stack, hardware interests, and a ship method.">
+            <div class="code__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="code__file">ranganath.py</span>
             </div>
-         </div>
-      </section>
-      <!-- Home Section End -->
-      <!-- About section start -->
-      <section class="about" id="about">
-         <div class="max-width">
-            <h2 class="title fadein">About me</h2>
-            <div class="about-content">
-               <div class="column left">
-                  <img src="./images/ranganath.jpeg" alt="Ranganath">
-                  <div>
-                     <div class="wrapper">
-                        <div class="button1">
-                           <div class="icon">
-                              <a href="https://www.linkedin.com/in/chetannada" target="_blank">
-                              <i class="fab fa-linkedin"></i>
-                           </div>
-                           <span>LinkedIn </a>
-                           </span>
-                        </div>
-                        <div class="buttonmob">
-                           <div class="button1">
-                              <div class="icon">
-                                 <a href="https://twitter.com/chetannada" target="_blank">
-                                 <i class="fab fa-twitter"></i>
-                              </div>
-                              <span>Twitter </a>
-                              </span>
-                           </div>
-                        </div>
-                        <div class="buttonmob1"></div>
-                        <div class="button1">
-                           <div class="icon">
-                              <a href="https://github.com/chetannada" target="_blank">
-                              <i class="fab fa-github"></i>
-                           </div>
-                           <span>Github </a>
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="column right">
-                  <div class="text">I'm Ranganath and <span class="break">I'm a <span class="typing2"></span>
-                     </span>
-                  </div>
-                  <p>I'm Self-taught React.js Developer. My goal is to build a fast, flexible, mobile-first website that clearly communicates with visitors. I have done B.E in E&C.</p>
-                  </a>
-               </div>
+<pre class="code__body" aria-hidden="true"><code><span class="c"># one developer, two kinds of stack</span>
+<span class="k">class</span> <span class="f">Ranganath</span>:
+    role     = <span class="s">"Python Full-Stack Developer"</span>
+    startup  = <span class="s">"CampusProjects.tech"</span>
+    backend  = [<span class="s">"Django REST"</span>, <span class="s">"MySQL"</span>, <span class="s">"JWT"</span>]
+    frontend = [<span class="s">"React"</span>, <span class="s">"TypeScript"</span>]
+    deploy   = [<span class="s">"Docker"</span>, <span class="s">"Nginx"</span>, <span class="s">"AWS"</span>]
+    hardware = [<span class="s">"ESP8266"</span>, <span class="s">"RF"</span>, <span class="s">"IoT"</span>]
+    published = <span class="s">"Taylor &amp; Francis, 2026"</span>
+
+    <span class="k">def</span> <span class="f">ship</span>(self, idea):
+        <span class="k">return</span> idea.build().test().deploy()<span class="caret caret--code"></span></code></pre>
+          </div>
+
+          <div class="float float--signal" aria-hidden="true">
+            <div class="mini-light"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ============ AT A GLANCE ============ -->
+    <section class="stats" aria-label="At a glance">
+      <div class="container stats__grid">
+        <div class="stat reveal"><b class="stat__n" data-count="1">1</b><span>startup co-founded<br><small>CampusProjects.tech</small></span></div>
+        <div class="stat reveal"><b class="stat__n" data-count="1">1</b><span>book chapter published<br><small>Taylor &amp; Francis, 2026</small></span></div>
+        <div class="stat reveal"><b class="stat__n" data-count="3">3</b><span>languages in voice alerts<br><small>English · Hindi · Kannada</small></span></div>
+        <div class="stat reveal"><b class="stat__n stat__n--text">ICARES ’25</b><span>research paper<br><small>Smart-watch for the visually impaired</small></span></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span>01</span> About</p>
+          <h2>Backend by trade,<br>hardware by training.</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__text reveal">
+            <p>I’m a Python full-stack developer from Gangavathi, Karnataka. I trained as an <strong>Electronics &amp; Communication engineer</strong> — which is why I’m just as comfortable wiring an ESP8266 to an RF module as I am wiring a Django API to a payment gateway.</p>
+            <p>Today I co-run <strong>CampusProjects.tech</strong>, a marketplace for ready-to-run, interview-ready student projects. I built its REST API, the Razorpay payment flow, the React frontend and the deployment — and I handle the SEO and analytics that help it grow.</p>
+            <p>Away from the product work, I co-authored a <strong>book chapter published by Taylor &amp; Francis</strong> about a wearable that gives visually impaired pedestrians haptic and voice feedback from real-time traffic-signal states.</p>
+
+            <div class="edu">
+              <article class="edu__item">
+                <p class="edu__label">Education</p>
+                <h3>B.E. in Electronics &amp; Communication Engineering</h3>
+                <p>Vidyavardhaka College of Engineering, Mysore</p>
+                <span class="chip chip--accent">CGPA 7.26</span>
+              </article>
+              <article class="edu__item">
+                <p class="edu__label">Certification</p>
+                <h3>Online internship in Python programming</h3>
+                <p>Completed online.</p>
+              </article>
             </div>
-         </div>
-      </section>
-      <!-- about section End -->
-      <!-- Skills section start -->
-      <section class="skills" id="skills">
-         <div class="max-width">
-            <h2 class="title fadein">My skills</h2>
-            <div class="skills-content">
-               <div class="column left">
-                  <div class="text">My creative skills & experiences</div>
-                  <p>I am a React Js Developer with a passion for learning and can work with estimation of future tasks and client feedback. I am highly-motivated, result oriented, self-driven, hard-working, fast learner and constantly seeking to improve my skills and am fully aware of the latest Front-end Development Tools. I have a firm knowledge of JavaScript and React Js, Parcel js, Node js, Redux, HTML5, CSS3, Git, SASS, Tailwind CSS, Bootstrap, REST API, JSON, Axios, Adobe Photoshop and possess a good knowledge of computer software packages (frameworks and tools) that are used in today’s technology.</p>
-                  <a href="#projects">Read more <i class="fas fa-angle-double-right"></i>
-                  </a>
-               </div>
-               <div class="column right">
-                  <div class="info">
-                     <a href="https://reactjs.org/" target="_blank">
-                     <img src="./images/react.png" alt="react" width="80" height="80" />
-                     </a>
-                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                     <img src="./images/javascript.png" alt="javascript" width="80" height="80" />
-                     </a>
-                     <a href="https://www.typescriptlang.org/" target="_blank">
-                     <img src="./images/typescript.png" alt="TypeScript" width="80" height="80" />
-                     </a>
-                     <a href="https://nodejs.org" target="_blank" rel="noreferrer">
-                     <img src="./images/node-js.png" alt="nodejs" width="80" height="80" />
-                     </a>
-                     <a href="https://redux.js.org" target="_blank" rel="noreferrer">
-                     <img src="./images/redux.png" alt="redux" width="80" height="80" />
-                     </a>
-                     <a href="https://jquery.com/" target="_blank" rel="noreferrer">
-                     <img src="./images/jquery.png" alt="jquery" width="80" height="80" />
-                     </a>
-                     <a href="https://www.w3.org/html/" target="_blank">
-                     <img src="./images/html5.png" alt="html5" width="80" height="80" />
-                     </a>
-                     <a href="https://www.w3schools.com/css/" target="_blank">
-                     <img src="./images/css3.png" alt="css3" width="80" height="80" />
-                     </a>
-                     <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
-                     <img src="./images/bootstrap.png" alt="bootstrap" width="80" height="80" />
-                     </a>
-                     <a href="https://sass-lang.com" target="_blank" rel="noreferrer">
-                     <img src="./images/sass.png" alt="sass" width="80" height="80" />
-                     </a>
-                     <a href="https://tailwindcss.com/" target="_blank">
-                     <img src="./images/tailwind-css.png" alt="react" width="80" height="80" />
-                     </a>
-                     <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
-                     <img src="./images/mongodb.png" alt="MongoDB" width="80" height="80" />
-                     </a>
-                     <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-                     <img src="./images/git.png" alt="git" width="80" height="80" />
-                     </a>
-                  </div>
-               </div>
+          </div>
+
+          <ul class="do reveal" aria-label="What I do">
+            <li class="do__card">
+              <span class="do__num">01</span>
+              <h3>Backend &amp; APIs</h3>
+              <p>Django REST Framework, MySQL, JWT auth, OTP email signup, Google sign-in, OpenAPI docs.</p>
+            </li>
+            <li class="do__card">
+              <span class="do__num">02</span>
+              <h3>Payments</h3>
+              <p>Razorpay end to end: checkout sessions, verification, webhooks and refunds.</p>
+            </li>
+            <li class="do__card">
+              <span class="do__num">03</span>
+              <h3>Frontend &amp; SEO</h3>
+              <p>React + TypeScript, sitemaps, structured data, GA4 / GTM ecommerce tracking.</p>
+            </li>
+            <li class="do__card">
+              <span class="do__num">04</span>
+              <h3>Deploy &amp; DevOps</h3>
+              <p>Docker, Gunicorn, Nginx on AWS Lightsail with HTTPS; frontend on Vercel.</p>
+            </li>
+            <li class="do__card">
+              <span class="do__num">05</span>
+              <h3>Embedded &amp; IoT</h3>
+              <p>ESP8266 microcontrollers, sensors, RF links and DF Player Mini audio.</p>
+            </li>
+            <li class="do__card">
+              <span class="do__num">06</span>
+              <h3>Research</h3>
+              <p>Co-author of a published chapter and an ICARES 2025 paper on assistive wearables.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span>02</span> Projects</p>
+          <h2>Things I’ve built,<br>shipped and published.</h2>
+        </header>
+
+        <!-- ---- CampusProjects.tech ---- -->
+        <article class="project reveal" id="campusprojects">
+          <header class="project__head">
+            <div>
+              <p class="project__tag">Startup · Co-Founder &amp; Full-Stack Developer</p>
+              <h3 class="project__title">CampusProjects.tech</h3>
             </div>
-         </div>
-      </section>
-      <!-- Skills section end -->
-      <!-- Project section start -->
-      <section class="projects" id="projects">
-         <div class="max-width">
-            <h2 class="title fadein">My Projects</h2>
-            <div class="carousel owl-carousel">
-               <div class="card">
-                  <a href="https://foodfire-app.netlify.app/" target="_blank">
-                     <div class="box">
-                        <img src="./images/project.jpeg" =" humannoid robot">
-                        <p>humannoid robot using arduino uno</p>
-                        <p>React.js, Parcel.js</p>
-                     </div>
-                  </a>
-               </div>
-               <div class="card">
-                  <a href="https://react-task-dashboard-panel.netlify.app/" target="_blank">
-                     <div class="box">
-                        <img src="./images/ReactJs User Dashboard Panel.png" alt="ReactJs User Dashboard Panel">
-                        <p>ReactJs User Dashboard Panel</p>
-                        <p>React.js, Webpack, MUI</p>
-                     </div>
-                  </a>
-               </div>
-               <div class="card">
-                  <a href="https://chetannada.github.io/FirstReactApp" target="_blank">
-                     <div class="box">
-                        <img src="./images/Images-Artha15.jpg" alt=" Smart city ">
-                        <p>smart city model</p>
-                        <p>React.js, Webpack</p>
-                     </div>
-                  </a>
-               </div>
+            <a class="btn btn--primary btn--small" href="https://www.campusprojects.tech" target="_blank" rel="noopener">Visit live site <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </header>
+
+          <p class="project__lead">An online marketplace that sells ready-to-run, interview-ready projects to students. I co-founded it and built the whole stack — from the REST API and payments to the frontend, deployment and search visibility.</p>
+
+          <ul class="features">
+            <li><h4>Accounts &amp; auth</h4><p>OTP-verified email signup, JWT authentication and Google sign-in.</p></li>
+            <li><h4>Catalog &amp; orders</h4><p>Project catalog, orders and secure, token-based project downloads.</p></li>
+            <li><h4>Razorpay payments</h4><p>Checkout sessions, payment verification, webhooks and refunds.</p></li>
+            <li><h4>Growth loops</h4><p>Referral rewards with a dashboard, a lead-capture form and a feedback survey.</p></li>
+            <li><h4>Ops &amp; docs</h4><p>OpenAPI documentation and Telegram alerts on server health status.</p></li>
+            <li><h4>SEO &amp; analytics</h4><p>Sitemap, structured data, canonical URLs, Search Console, GA4/GTM ecommerce tracking.</p></li>
+          </ul>
+
+          <div class="arch" id="arch">
+            <div class="arch__head">
+              <h4>How it fits together</h4>
+              <p>Click any block to see what it does.</p>
             </div>
-         </div>
-      </section>
-      <!-- Project section end -->
-      <!-- Contact section start -->
-      <section class="contact" id="contact">
-         <div class="max-width">
-            <h2 class="title fadein">Contact me</h2>
-            <div class="contact-content">
-               <div class="column left">
-                  <div class="text">Reach Out to me!</div>
-                  <p>Discuss a Project or just want to say Hi? My inbox is open for all.</p>
-                  <div class="icons">
-                     <div class="row">
-                        <i class="fas fa-user"></i>
-                        <div class="info">
-                           <div class="head">Name</div>
-                           <div class="sub-title">Ranganath</div>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="info">
-                           <div class="head">Address</div>
-                           <div class="sub-title">Gangavathi, India</div>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <i class="fas fa-envelope email-icon"></i>
-                        <div class="info">
-                           <div class="head">Email</div>
-                           <div class="sub-title">ranganathmukkundi@gmail.com</div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="text1">Stay Connected</div>
-                  <div>
-                     <div class="wrapper">
-                        <div class="button1">
-                           <div class="icon">
-                              <a href="https://www.linkedin.com/in/chetannada" target="_blank">
-                              <i class="fab fa-linkedin"></i>
-                           </div>
-                           <span>LinkedIn </a>
-                           </span>
-                        </div>
-                        <div class="buttonmob">
-                           <div class="button1">
-                              <div class="icon">
-                                 <a href="https://twitter.com/chetannada" target="_blank">
-                                 <i class="fab fa-twitter"></i>
-                              </div>
-                              <span>Twitter </a>
-                              </span>
-                           </div>
-                        </div>
-                        <div class="buttonmob1"></div>
-                        <div class="button1">
-                           <div class="icon">
-                              <a href="https://github.com/chetannada" target="_blank">
-                              <i class="fab fa-github"></i>
-                           </div>
-                           <span>Github </a>
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="column right">
-                  <div class="text">Message me</div>
-                  <form action="#">
-                     <div class="fields">
-                        <div class="field name">
-                           <input type="text" placeholder="Name" required>
-                        </div>
-                        <div class="field email">
-                           <input type="email" placeholder="Email" name="email" required>
-                        </div>
-                     </div>
-                     <div class="field">
-                        <input type="text" placeholder="Subject" required>
-                     </div>
-                     <div class="field textarea">
-                        <textarea cols="30" rows="10" placeholder="Describe Project..." required></textarea>
-                     </div>
-                     <div class="button">
-                        <button type="submit">Send Message <i class="fas fa-paper-plane"></i>
-                        </button>
-                     </div>
-                  </form>
-               </div>
+
+            <div class="flow" role="group" aria-label="System architecture">
+              <button type="button" class="node" data-node="visitors" aria-pressed="false">
+                <span class="node__k">Traffic</span>
+                <strong>Visitors</strong>
+                <small>Search &rarr; site</small>
+              </button>
+              <button type="button" class="node" data-node="frontend" aria-pressed="false">
+                <span class="node__k">Vercel</span>
+                <strong>React + TypeScript</strong>
+                <small>Frontend &amp; proxy</small>
+              </button>
+              <button type="button" class="node" data-node="api" aria-pressed="false">
+                <span class="node__k">AWS Lightsail</span>
+                <strong>Django REST API</strong>
+                <small>Docker · Gunicorn · Nginx</small>
+              </button>
+              <button type="button" class="node" data-node="db" aria-pressed="false">
+                <span class="node__k">Supabase</span>
+                <strong>MySQL</strong>
+                <small>Database</small>
+              </button>
             </div>
-         </div>
-      </section>
-      <!-- Contact section end -->
-      <!-- footer section start -->
-      <footer>
-         <span>Created By <a href="https://www.linkedin.com/in/chetannada/" target="_blank">Chetan Nada</a> | <span class="far fa-copyright"></span> 2023 All rights reserved </span>
-      </footer>
-      <!-- footer section end -->
-      <!-- External Javascript File start-->
-      <script src="script.js" async></script>
-      <!-- External Javascript File end-->
-   </body>
+
+            <div class="plug" role="group" aria-label="Services connected to the API">
+              <span class="plug__label">Plugged into the API</span>
+              <button type="button" class="node node--sm" data-node="razorpay" aria-pressed="false"><strong>Razorpay</strong></button>
+              <button type="button" class="node node--sm" data-node="google" aria-pressed="false"><strong>Google sign-in</strong></button>
+              <button type="button" class="node node--sm" data-node="telegram" aria-pressed="false"><strong>Telegram alerts</strong></button>
+            </div>
+
+            <div class="detail" id="archDetail" aria-live="polite">
+              <h5 id="archTitle"></h5>
+              <ul id="archPoints"></ul>
+            </div>
+          </div>
+
+          <ul class="chips" aria-label="Technologies used">
+            <li class="chip">Python</li><li class="chip">Django REST Framework</li><li class="chip">MySQL</li><li class="chip">JWT</li>
+            <li class="chip">React.js</li><li class="chip">TypeScript</li><li class="chip">Razorpay</li><li class="chip">Docker</li>
+            <li class="chip">Gunicorn</li><li class="chip">Nginx</li><li class="chip">AWS Lightsail</li><li class="chip">Vercel</li>
+            <li class="chip">Supabase</li><li class="chip">OpenAPI</li><li class="chip">GA4 / GTM</li><li class="chip">SEO</li>
+          </ul>
+        </article>
+
+        <!-- ---- Smart-watch ---- -->
+        <article class="project reveal" id="smartwatch">
+          <header class="project__head">
+            <div>
+              <p class="project__tag">Research · IoT · ICARES 2025</p>
+              <h3 class="project__title">Smart-Watch Navigation System<br><span class="project__sub">for visually impaired people</span></h3>
+            </div>
+            <a class="btn btn--ghost btn--small" href="#publication">Read the publication <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </header>
+
+          <p class="project__lead">A wearable that receives traffic-signal states over an RF transmitter–receiver link and tells a visually impaired pedestrian when it’s safe to cross — through a distinct vibration pattern for each state, plus voice alerts in English, Hindi and Kannada.</p>
+
+          <div class="demo" id="demo">
+            <div class="demo__controls">
+              <p class="demo__step"><span>1</span> Pick a signal state</p>
+              <div class="seg seg--signal" role="group" aria-label="Traffic signal state">
+                <button type="button" class="seg__btn seg__btn--red" data-state="red" aria-pressed="true"><i></i>Red</button>
+                <button type="button" class="seg__btn seg__btn--yellow" data-state="yellow" aria-pressed="false"><i></i>Yellow</button>
+                <button type="button" class="seg__btn seg__btn--green" data-state="green" aria-pressed="false"><i></i>Green</button>
+              </div>
+
+              <p class="demo__step"><span>2</span> Choose the alert language</p>
+              <div class="seg" role="group" aria-label="Voice alert language">
+                <button type="button" class="seg__btn" data-lang="en" aria-pressed="true">English</button>
+                <button type="button" class="seg__btn" data-lang="hi" aria-pressed="false" lang="hi">हिन्दी</button>
+                <button type="button" class="seg__btn" data-lang="kn" aria-pressed="false" lang="kn">ಕನ್ನಡ</button>
+              </div>
+
+              <div class="demo__actions">
+                <button type="button" class="btn btn--primary btn--small" id="demoPlay"><svg class="icon"><use href="#i-play"/></svg> Replay alert</button>
+                <button type="button" class="btn btn--ghost btn--small" id="demoAuto" aria-pressed="false"><svg class="icon"><use href="#i-pulse"/></svg> Auto-cycle</button>
+                <button type="button" class="btn btn--ghost btn--small" id="demoSpeak" aria-pressed="false" hidden><svg class="icon"><use href="#i-volume"/></svg> Speak aloud</button>
+              </div>
+              <p class="demo__note" id="demoNote">A browser simulation with illustrative vibration patterns and phrasing — not the device firmware.</p>
+            </div>
+
+            <div class="stage" aria-label="Simulation of the wearable">
+              <div class="stage__row">
+                <div class="tl" aria-hidden="true">
+                  <i class="tl__lamp tl__lamp--r" data-lamp="red"></i>
+                  <i class="tl__lamp tl__lamp--y" data-lamp="yellow"></i>
+                  <i class="tl__lamp tl__lamp--g" data-lamp="green"></i>
+                </div>
+
+                <div class="rf" aria-hidden="true"><span></span><span></span><span></span></div>
+
+                <div class="watch" id="watch" aria-hidden="true">
+                  <div class="watch__band watch__band--t"></div>
+                  <div class="watch__case"><div class="watch__face"><i></i></div></div>
+                  <div class="watch__band watch__band--b"></div>
+                  <span class="ripple"></span><span class="ripple"></span>
+                </div>
+              </div>
+
+              <div class="stage__info">
+                <p class="stage__label">Voice alert</p>
+                <p class="stage__voice" id="demoVoice" aria-live="polite">Signal is red. Please wait.</p>
+                <p class="stage__label">Vibration pattern <span id="demoPatternName" class="stage__pname">one long pulse</span></p>
+                <div class="pattern" id="demoPattern" aria-hidden="true"></div>
+                <p class="stage__hint" id="demoHaptic" hidden>On a phone, tapping a state also triggers real vibration.</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="features features--two">
+            <li><h4>Haptic signal states</h4><p>Red, yellow and green each get their own vibration pattern so the wearer knows when it is safe to cross.</p></li>
+            <li><h4>Multilingual voice</h4><p>A DF Player Mini plays alerts in English, Hindi and Kannada — selectable by the user.</p></li>
+            <li><h4>RF link</h4><p>Signal states travel from a transmitter at the crossing to a receiver in the wristband.</p></li>
+            <li><h4>Wearable build</h4><p>An ESP8266 drives everything from a rechargeable battery, packaged in a wristband.</p></li>
+          </ul>
+
+          <ul class="chips" aria-label="Technologies used">
+            <li class="chip">ESP8266</li><li class="chip">DF Player Mini</li><li class="chip">RF Communication</li><li class="chip">Embedded Systems</li><li class="chip">Sensors</li><li class="chip">IoT</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span>03</span> Skills</p>
+          <h2>The toolbox.</h2>
+        </header>
+
+        <div class="skills">
+          <article class="skill reveal">
+            <h3>Programming</h3>
+            <ul class="chips"><li class="chip">Python</li><li class="chip">Java</li><li class="chip">JavaScript</li><li class="chip">SQL</li><li class="chip">HTML</li><li class="chip">CSS</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3>Backend &amp; DevOps</h3>
+            <ul class="chips"><li class="chip">Django REST Framework</li><li class="chip">MySQL</li><li class="chip">Docker</li><li class="chip">Gunicorn</li><li class="chip">Nginx</li><li class="chip">AWS Lightsail</li><li class="chip">Vercel</li><li class="chip">Git</li><li class="chip">GitHub</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3>Web &amp; Integrations</h3>
+            <ul class="chips"><li class="chip">React</li><li class="chip">REST APIs</li><li class="chip">Razorpay</li><li class="chip">Google Analytics 4</li><li class="chip">Google Tag Manager</li><li class="chip">SEO</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3>Embedded &amp; IoT</h3>
+            <ul class="chips"><li class="chip">Embedded Systems</li><li class="chip">ESP8266</li><li class="chip">Microcontrollers</li><li class="chip">Sensors</li><li class="chip">RF Communication</li><li class="chip">DF Player Mini</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3>Fundamentals</h3>
+            <ul class="chips"><li class="chip">Object-Oriented Programming</li><li class="chip">Computer Networks</li><li class="chip">Operating Systems</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATION ============ -->
+    <section class="section section--alt" id="publication">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span>04</span> Publication</p>
+          <h2>Research that<br>made it to print.</h2>
+        </header>
+
+        <article class="pub reveal">
+          <div class="book" aria-hidden="true">
+            <div class="book__spine"></div>
+            <div class="book__cover">
+              <span class="book__pub">Taylor &amp; Francis</span>
+              <strong>Applied Research in Engineering Sciences</strong>
+              <span class="book__ch">Chapter 89</span>
+              <span class="book__lights"><i></i><i></i><i></i></span>
+            </div>
+          </div>
+
+          <div class="pub__body">
+            <p class="project__tag">Book chapter · 2026</p>
+            <h3 class="pub__title">The Safe-Guard: Signal-Triggered Voice-Vibrator Alert</h3>
+            <p class="pub__venue"><em>Applied Research in Engineering Sciences</em>, Taylor &amp; Francis Group, 2026</p>
+            <p class="pub__desc">Co-authored a chapter on a wearable alert system that gives visually impaired pedestrians haptic and voice feedback from real-time traffic-signal states.</p>
+
+            <dl class="pub__meta">
+              <div><dt>Chapter</dt><dd>89</dd></div>
+              <div><dt>Pages</dt><dd>547–553</dd></div>
+              <div><dt>ISBN</dt><dd>978-1-041-29757-4</dd></div>
+              <div><dt>DOI</dt><dd>10.1201/9781003771104-89</dd></div>
+            </dl>
+
+            <div class="pub__actions">
+              <a class="btn btn--primary btn--small" href="https://doi.org/10.1201/9781003771104-89" target="_blank" rel="noopener">View via DOI <svg class="icon"><use href="#i-arrow"/></svg></a>
+              <button class="btn btn--ghost btn--small" type="button" id="copyCite" data-cite="The Safe-Guard: Signal-Triggered Voice-Vibrator Alert. In Applied Research in Engineering Sciences. Taylor &amp; Francis Group, 2026. Chapter 89, pp. 547–553. ISBN 978-1-041-29757-4. DOI: 10.1201/9781003771104-89">
+                <svg class="icon icon--copy"><use href="#i-copy"/></svg><svg class="icon icon--done"><use href="#i-check"/></svg>
+                <span id="copyLabel">Copy citation</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span>05</span> Contact</p>
+          <h2>Let’s build something<br>that works.</h2>
+        </header>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <p class="contact__lead">Hiring, collaborating, or curious about CampusProjects.tech or the wearable? Send a message — I’d love to hear from you.</p>
+            <ul class="contact__list">
+              <li><svg class="icon"><use href="#i-mail"/></svg><div><span>Email</span><a href="mailto:ranganathmukkundi@gmail.com">ranganathmukkundi@gmail.com</a></div></li>
+              <li><svg class="icon"><use href="#i-phone"/></svg><div><span>Phone</span><a href="tel:+918088266982">+91 80882 66982</a></div></li>
+              <li><svg class="icon"><use href="#i-linkedin"/></svg><div><span>LinkedIn</span><a href="https://www.linkedin.com/in/ranganath-m" target="_blank" rel="noopener">linkedin.com/in/ranganath-m</a></div></li>
+              <li><svg class="icon"><use href="#i-globe"/></svg><div><span>Startup</span><a href="https://www.campusprojects.tech" target="_blank" rel="noopener">campusprojects.tech</a></div></li>
+              <li><svg class="icon"><use href="#i-pin"/></svg><div><span>Based in</span><b>Gangavathi, Karnataka, India</b></div></li>
+            </ul>
+          </div>
+
+          <form class="form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required placeholder="Jane Doe">
+            </div>
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required placeholder="jane@company.com">
+            </div>
+            <div class="field">
+              <label for="cf-msg">Message</label>
+              <textarea id="cf-msg" name="message" rows="5" required placeholder="Tell me about the role, project or idea…"></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">Send message <svg class="icon"><use href="#i-arrow"/></svg></button>
+            <p class="form__note" id="formNote" role="status">This opens your email app with the message ready to send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Ranganath M. Designed &amp; built by hand with HTML, CSS and JavaScript.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
